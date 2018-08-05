@@ -1,0 +1,18 @@
+<p>
+  testeable works!
+</p>
+<label for="ch-1">Checkbox 1</label>
+<input type="checkbox" id="ch1" name="ch-1" [(ngModel)]="ch1" (change)="logValues()" />
+
+<label for="ch-2">Checkbox 2</label>
+<input type="checkbox" id="ch2" name="ch-2" [(ngModel)]="ch2" (change)="logValues()"/>
+
+<label for="ch-3">Checkbox 3</label>
+<input type="checkbox" id="ch3" name="ch-3" [(ngModel)]="ch3" (change)="logValues()"/>
+
+<label for="ch-4">Checkbox 4</label>
+<input type="checkbox" id="ch4" name="ch-4" [(ngModel)]="ch4" (change)="logValues()"/>
+
+<p>
+  <span id="message" *ngIf='checkCondition() == true'> Mensaje!! </span>
+</p>
